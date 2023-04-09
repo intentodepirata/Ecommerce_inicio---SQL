@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <title>Releevant-Ecommerce</title>
+  </head>
+
+  <body>
+    <header class="header-carrito wrap">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="../assets/images/logo.png" alt="logo" />
+          <!-- <h4 class="no-margin h6">My<span>Releevant</span>Store</h4> -->
+        </a>
+     </div>
+
+     <div class="navegacion-carrito">
+       <a href="carrito.html" class="btnClaro">Carrito</a>
+       <img src="../assets/icons/arrow-right.svg" alt="flecha">
+       <a href="forma-de-pago.html" class="btnClaro select">Forma de pago</a>
+       <img src="../assets/icons/arrow-right.svg" alt="flecha">
+       <a href="finalizar-compra.html" class="btnClaro ">Finalizar pedido</a>
+     </div>
+    </header>
+
+    <main class="wrap">
+      <div class="carrito-titulo">
+        <h1>Forma de pago</h1>
+        <a class="btnClaro" href="index.html">Seguir comprando</a>
+      </div>
+      
+<section class="wrap grid-2">
+  <div class="contenedor-tarjeta">
+    <h2 class="no-margin">Mis tarjetas</h2>
+    <div class="formulario-tarjeta" id="tarjetaForm">
+
+    </div>
+  </div>
+
+    <div class="contenedor-addtarjeta">
+      <h3 class="no-margin">Añadir nueva tarjeta</h3>
+      <div id="alertaErrorTarjeta" class="mensaje error none">
+        <p>Todos los campos son obligatorios</p>
+      </div>
+
+      <div id="alertaExitoTarjeta" class="mensaje exito none">
+        <p>Agregado correctamente</p>
+      </div>
+      <form id="form-tarjeta">
+        <input type="text" name="tarjeta" placeholder="Numero de tarjeta" />
+        <input
+          type="text"
+          name="titular"
+          placeholder="Titular de la tarjeta"
+        />
+        <input
+          type="text"
+          name="tipo"
+          placeholder="Tipo de tarjeta"
+        />
+
+        <div>
+          <input type="number" name="caducidadMes" max="12" min="01" placeholder="Caducidad Mes" />
+          <input type="number" name="caducidadAnio" max="99" min="00" placeholder="Caducidad Año" />
+          <input type="number" name="cvv" placeholder="Codigo CVV" min="0" />
+
+        </div>
+        <button class="btn select" type="submit">Añadir a mis tarjetas</button>
+      </form>
+    </div>
+
+</section>
+
+<section class="contenedor-comprar wrap" >
+  <div class="icono">
+    <img src="../assets/icons/pagoseguro.svg" alt="Icono" width="50px" />
+    <div>
+      <h4>Pago seguro</h4>
+      <p>100% garantizado</p>
+    </div>
+  </div>
+  <div class="icono">
+    <img src="../assets/icons/enviogratis.svg" alt="Icono" width="50px" />
+    <div>
+      <h4>Envio gratis</h4>
+      <p>En pedidos de +100€</p>
+    </div>
+  </div>
+  <div class="icono">
+    <img src="../assets/icons/garantia.svg" alt="Icono" width="50px" />
+    <div>
+      <h4>2 años de garantía</h4>
+      <p>En todos los repuestos</p>
+    </div>
+  </div>
+  <div class="icono">
+    <img src="../assets/icons/ofertas.svg" alt="Icono" width="50px" />
+    <div>
+      <h4>Ofertas únicas</h4>
+      <p>Precio de mayorista</p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer >
+<div class="footer wrap grid-2">
+<div>
+  <div class="logo-footer">
+    <a href="/index.html">
+      <img src="../assets/images/logo-footer.PNG" alt="logo-footer" />
+      <!-- <h4 class="no-margin h6">My<span>Releevant</span>Store</h4> -->
+    </a>
+ </div>
+ <div class="grid-2">
+   <ul class="menu">
+     <li>Centro de ayuda</li>
+     <li>Servicio al consumidor</li>
+     <li>Escribenos</li>
+     <li>Servicio telefonico</li>
+   </ul>
+   <ul class="menu">
+     <li>Politica de privacidad</li>
+     <li>Condiciones de compra</li>
+     <li>Opiniones de clientes</li>
+     <li>Aviso de privacidad y cookies</li>
+   </ul>
+
+ </div>
+</div>
+<div class="social">
+  <h4 class="no-margin">Únete a nuestra newsletter y 
+    recibe ofertas diarias</h4>
+
+  <form class="social-newsletter">
+    <div class="newsletter">
+      <input class="newsletter-email" type="email" name="email" placeholder="Introduce tu email" />
+      <input class="newsletter-btn social"type="submit" value="Suscribirme" />
+    </div>
+    <label for="politica">
+      <input class="social-checkbox" type="checkbox" value="acepto" />
+     <p class="in-line"> Acepto la <span>política de privacidad</span> de esta web</p>
+    </label>
+  </form>
+
+  <div class="social-iconos">
+    <h4>Siguenos en redes</h4>
+    <div>
+      <a href="">
+        <img src="../assets/icons/facebook.svg" alt="facebook">
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="../assets/icons/youtube.svg" alt="youtube">
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="../assets/icons/twitch.svg" alt="twitch">
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <img src="../assets/icons/instagram.svg" alt="instagram">
+
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+<script src="../SCRIPTS/forma-pago.js"></script>
+</body>
+</html>
+
